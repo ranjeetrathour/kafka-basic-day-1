@@ -34,6 +34,7 @@ class KafkaConfig{
 	public NewTopic AlphaTopic(){
 		return TopicBuilder.name("aplha-topic-1")
 				.partitions(5)
+//				.replicas(5)     this is not working need to check
 				.build();
 	}
 }
